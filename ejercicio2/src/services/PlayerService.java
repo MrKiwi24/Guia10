@@ -15,7 +15,7 @@ public class PlayerService {
             System.out.println("in: number of players (up to 6)");
             int numberOfPlayers = Integer.parseInt(read.nextLine());
 
-            if(numberOfPlayers <= 6 || numberOfPlayers >= 1){
+            if(numberOfPlayers <= 6 && numberOfPlayers >= 1){
                 break;
             }
             else {
