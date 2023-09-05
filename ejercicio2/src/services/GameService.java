@@ -15,7 +15,7 @@ public class GameService {
     public void createNewGame(){
         System.out.println("The bullet's been loaded.");
         for(int i = 0; i<loadedGun.size(); i++){
-            System.out.println(playerList.get(i).getPlayerName() + "'s turn. Press any key, then enter to fire!");
+            System.out.println(playerList.get(i).getPlayerName() + "'s turn. Press any key, then 'enter' to fire!");
             waitForInput();
             if(loadedGun.get(i).isLoaded()){
                 playerList.get(i).setSoaked(true);

@@ -14,10 +14,6 @@ public class Player {
     public Player() {
     }
 
-    public int getPlayerID() {
-        return playerID;
-    }
-
     public void setPlayerID(int playerID) {
         this.playerID = playerID;
     }
@@ -28,10 +24,6 @@ public class Player {
 
     public void setPlayerName(String playerName) {
         this.playerName = playerName;
-    }
-
-    public boolean isSoaked() {
-        return isSoaked;
     }
 
     public void setSoaked(boolean soaked) {

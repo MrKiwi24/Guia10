@@ -29,13 +29,8 @@ public class PlayerService {
             String playerName = "Player";
 
             if (count <= numberOfPlayers){
-                Player player = new Player();
-                player.setPlayerID(count);
-                playerName = playerName.concat(String.valueOf(count));
-                player.setPlayerName(playerName);
-                count ++;
+                Player player = new Player(count, playerName.concat(String.valueOf(count)), false);
                 players.add(player);
-
             } else {
                 count = 1;
                 i --;
